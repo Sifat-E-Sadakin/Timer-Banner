@@ -14,6 +14,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  justify-content: center;
 }
 .banner-wrapper .banner-text {
   display: flex;
@@ -40,6 +41,11 @@ body {
   margin: 50px 0 50px 0;
   padding-left: 12px;
 }
+.banner-wrapper .banner-text .lower-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .banner-wrapper .banner-text .lower-text h3 {
   font-family: "sf-pro";
   color: #ffffff;
@@ -62,7 +68,6 @@ body {
   border-radius: 30px;
   padding: 45px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
@@ -74,7 +79,7 @@ body {
   font-family: "sf-pro";
   line-height: 0.9;
   color: #ffffff;
-  font-size: 80px;
+  font-size: 94px;
 }
 .banner-wrapper
   .banner-widgets-wrapper
@@ -92,7 +97,7 @@ body {
   div
   span {
   opacity: 0.25;
-  font-size: 50px;
+  font-size: 46px;
 }
 .banner-wrapper
   .banner-widgets-wrapper
@@ -110,8 +115,8 @@ body {
   .control-box
   .upper-control {
   background-color: rgba(62, 62, 62, 0.38);
-  height: 76px;
-  width: 221.3333333333px;
+  height: 101.3333333333px;
+  width: 100%;
   border-radius: 20px;
   padding: 20px 16px;
   display: flex;
@@ -128,8 +133,23 @@ body {
   h5 {
   font-family: "sf-pro";
   color: #ffffff;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: normal;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
+  .upper-control
+  h5
+  span
+  span {
+  opacity: 0.25;
 }
 .banner-wrapper
   .banner-widgets-wrapper
@@ -141,13 +161,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 90px;
   width: 100%;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.15);
   border: none;
   font-family: "sf-pro";
   color: #ffffff;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: normal;
   padding-left: 10px;
   border-radius: 15px;
 }
@@ -156,10 +178,20 @@ body {
   .single-widget-wrapper
   .single-widget-box
   .control-box
+  .upper-control
+  div
+  svg {
+  padding-right: 10px;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
   .lower-control {
   background-color: rgba(0, 0, 0, 0.15);
-  height: 40px;
-  width: 221.3333333333px;
+  height: 64.6666666667px;
+  width: 100%;
   border-radius: 20px;
   padding: 20px 16px;
   font-family: "sf-pro";
@@ -180,5 +212,121 @@ body {
   transform: rotate(10deg);
 }
 .banner-wrapper .banner-widgets-wrapper > :last-child {
-  transform: rotate(-10deg);
+  transform: translateX(50px) rotate(-10deg);
+}
+
+@media (max-width: 576px) {
+  .banner-wrapper {
+    padding: 0 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+  }
+  .banner-wrapper .banner-text {
+    justify-content: flex-start;
+    height: auto;
+  }
+  .banner-wrapper .banner-text .upper-text h1 {
+    font-size: 64px;
+  }
+  .banner-wrapper .banner-text .upper-text h4 {
+    font-size: 24px;
+  }
+  .banner-wrapper .banner-text .lower-text h3 {
+    font-size: 24px;
+  }
+  .banner-wrapper .banner-widgets-wrapper .single-widget-wrapper {
+    margin: 20px 0;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box {
+    height: 175px;
+    width: 300px;
+    padding: 30px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .timer-box {
+    font-size: 64px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .timer-box
+    div
+    span {
+    font-size: 30px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .upper-control {
+    height: 76px;
+    padding: 10px 8px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .upper-control
+    h5 {
+    font-size: 16px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .upper-control
+    h5
+    span
+    span {
+    font-size: 20px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .upper-control
+    div {
+    font-size: 16px;
+    height: 30px;
+    padding-left: 5px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .upper-control
+    div
+    svg {
+    padding-right: 5px;
+  }
+  .banner-wrapper
+    .banner-widgets-wrapper
+    .single-widget-wrapper
+    .single-widget-box
+    .control-box
+    .lower-control {
+    height: 48.5px;
+    padding: 10px 8px;
+    font-size: 24px;
+  }
+  .banner-wrapper .banner-widgets-wrapper .single-widget-wrapper .widget-foot {
+    font-size: 16px;
+  }
+  .banner-wrapper .banner-widgets-wrapper > :last-child {
+    transform: translateX(0) rotate(-10deg);
+  }
 }
