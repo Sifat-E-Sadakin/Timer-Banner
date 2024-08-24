@@ -74,6 +74,14 @@ body {
 .banner-wrapper
   .banner-widgets-wrapper
   .single-widget-wrapper
+  .single-widget-box:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(100px);
+  transition: 300ms;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
   .single-widget-box
   .timer-box {
   font-family: "sf-pro";
@@ -129,6 +137,15 @@ body {
   .single-widget-wrapper
   .single-widget-box
   .control-box
+  .upper-control:hover {
+  background-color: rgba(62, 62, 62, 0.8);
+  transition: 300ms;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
   .upper-control
   h5 {
   font-family: "sf-pro";
@@ -172,6 +189,17 @@ body {
   font-weight: normal;
   padding-left: 10px;
   border-radius: 15px;
+  cursor: pointer;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
+  .upper-control
+  div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 300ms;
 }
 .banner-wrapper
   .banner-widgets-wrapper
@@ -200,6 +228,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
+  .lower-control:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 300ms;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
+  .lower-control
+  h5
+  svg:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 300ms;
+}
+.banner-wrapper
+  .banner-widgets-wrapper
+  .single-widget-wrapper
+  .single-widget-box
+  .control-box
+  .lower-control
+  div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 300ms;
 }
 .banner-wrapper .banner-widgets-wrapper .single-widget-wrapper .widget-foot {
   font-family: "sf-pro";
